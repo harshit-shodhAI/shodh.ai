@@ -17,8 +17,11 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "next",
     "next": "latest",
+    "postcss": "^8.4.38",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "tailwindcss": "next"
   }
 }
