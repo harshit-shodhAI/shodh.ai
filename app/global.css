@@ -1,16 +1,26 @@
-@import "tailwindcss/preflight" layer(base);
-@import "tailwindcss/utilities" layer(utilities);
+@import "tailwindcss";
 
 @theme {
 	--container-padding: 0.25rem;
 
+	--color-*: initial;
 	--color-white: #ffffff;
 	--color-black: #000000;
+
+	--height-line: 0.5px;
+}
+
+@layer base {
+	html,
+	body {
+		@apply bg-black text-white h-full w-full;
+	}
 }
 
 .container {
 	@apply mx-auto w-full;
-	padding: var(--container-padding);
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
 }
 
 @media (min-width: 640px) {
