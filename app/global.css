@@ -3,6 +3,8 @@
 @theme {
 	--container-padding: 0.25rem;
 
+	--default-font-family: var(--font-poppins);
+
 	--color-*: initial;
 	--color-white: #ffffff;
 	--color-black: #000000;
