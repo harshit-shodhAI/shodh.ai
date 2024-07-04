@@ -1,3 +1,7 @@
+import { Button } from 'components/primitives';
+
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
+
 export default function Page() {
 	return (
 		<>
@@ -11,7 +15,9 @@ export default function Page() {
 					Governance & more!
 				</p>
 
-				<button type="button">Explore Models</button>
+				<Button icon={<ArrowRight size={16} weight="bold" />}>
+					Explore Models
+				</Button>
 			</div>
 		</>
 	);

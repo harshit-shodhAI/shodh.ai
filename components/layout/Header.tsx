@@ -1,6 +1,9 @@
-import Link from "next/link";
+import { Button } from 'components/primitives';
+import Link from 'next/link';
 
-export default () => {
+import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
+
+const Header = () => {
 	return (
 		<>
 			<div className="container flex h-16 items-center justify-between">
@@ -14,16 +17,20 @@ export default () => {
 					<Link href="/faq">FAQ</Link>
 				</nav>
 
-				<button type="button">Explore Models</button>
+				<Button icon={<ArrowRight size={16} weight="bold" />}>
+					Explore Models
+				</Button>
 			</div>
 
 			<div
 				className="h-line w-full"
 				style={{
 					background:
-						"linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 49.5%, rgba(255, 255, 255, 0) 100%)",
+						'linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 49.5%, rgba(255, 255, 255, 0) 100%)',
 				}}
 			/>
 		</>
 	);
 };
+
+export default Header;
