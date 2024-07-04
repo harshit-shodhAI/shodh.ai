@@ -3,6 +3,7 @@ import type { FC, ReactNode } from 'react';
 type ButtonProps = {
 	icon?: ReactNode;
 	twStyles?: string;
+	rounded?: boolean;
 	iconPosition?: 'before' | 'after';
 	children: ReactNode;
 };
@@ -10,6 +11,7 @@ type ButtonProps = {
 const Button: FC<ButtonProps> = ({
 	icon,
 	children,
+	rounded = false,
 	iconPosition = 'after',
 	twStyles,
 }) => {
@@ -17,7 +19,7 @@ const Button: FC<ButtonProps> = ({
 		<div className="relative">
 			<button
 				type="button"
-				className={`gradient-border z-10 flex items-center justify-between gap-3 bg-white/[0.04] px-6 py-3 ${twStyles}`}
+				className={`${rounded ? 'pill-border' : 'gradient-border'} z-10 flex items-center justify-between gap-3 bg-white/[0.04] px-6 py-3 ${twStyles}`}
 			>
 				{iconPosition === 'before' && icon}
 				{children}
