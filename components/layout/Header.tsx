@@ -1,4 +1,5 @@
 import { Button } from 'components/primitives';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
@@ -7,7 +8,12 @@ const Header = () => {
 	return (
 		<>
 			<div className="container flex h-16 items-center justify-between">
-				<p> Logo </p>
+				<Image
+					src="/logo.svg"
+					alt="Shodh.AI Logo"
+					width={120}
+					height={50}
+				/>
 
 				<nav className="flex gap-12">
 					<Link href="/">Home</Link>
@@ -17,7 +23,10 @@ const Header = () => {
 					<Link href="/faq">FAQ</Link>
 				</nav>
 
-				<Button icon={<ArrowRight size={16} weight="bold" />}>
+				<Button
+					icon={<ArrowRight size={16} weight="bold" />}
+					twStyles="scale-90"
+				>
 					Explore Models
 				</Button>
 			</div>
