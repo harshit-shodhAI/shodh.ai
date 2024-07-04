@@ -17,7 +17,7 @@ const Button: FC<ButtonProps> = ({
 		<div className="relative">
 			<button
 				type="button"
-				className={`gradient-border z-10 flex items-center justify-between gap-3 rounded-xl bg-white/[0.04] px-6 py-3 ${twStyles}`}
+				className={`gradient-border z-10 flex items-center justify-between gap-3 bg-white/[0.04] px-6 py-3 ${twStyles}`}
 			>
 				{iconPosition === 'before' && icon}
 				{children}
