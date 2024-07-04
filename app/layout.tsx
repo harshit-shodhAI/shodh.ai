@@ -8,7 +8,7 @@ import type { ReactNode } from 'react';
 const PoppinsFont = Poppins({
 	subsets: ['latin'],
 	display: 'swap',
-	weight: '400',
+	weight: ['300', '400'],
 	variable: '--font-poppins',
 });
 
