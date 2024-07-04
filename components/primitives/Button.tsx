@@ -24,7 +24,7 @@ const Button: FC<ButtonProps> = ({
 				{iconPosition === 'after' && icon}
 			</button>
 
-			<div className="pointer-events-none absolute top-0 left-1/2 z-0 h-full w-[150%] translate-x-[-50%] bg-blue blur-[96px]" />
+			<div className="pointer-events-none absolute top-0 left-1/2 z-0 h-full w-[150%] translate-x-[-50%] bg-blue blur-[108px]" />
 		</div>
 	);
 };
