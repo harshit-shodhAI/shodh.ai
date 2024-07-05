@@ -1,5 +1,6 @@
 import EmployeeCard from 'components/about/EmployeeCard';
 import { Button } from 'components/primitives';
+import data from 'lib/data/about.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,48 +12,38 @@ export default function Page() {
 			{/* Hero Section */}
 			<div className='container mx-auto flex h-[calc(100vh-4rem)] flex-col items-center justify-center gap-8 bg-[url("/hero-bg.gif")] bg-center bg-cover bg-no-repeat'>
 				<p className="font-medium text-sm uppercase tracking-widest">
-					About Us
+					{data['top-heading']}
 				</p>
 				<h1 className="gradient-hero-title max-w-[24ch] text-center font-light text-7xl leading-tight">
-					Get to know the brains behind Shodh.AI
+					{data.mainHeading}
 				</h1>
 				<p className="mb-6 max-w-[54ch] text-center opacity-80">
-					Founded in 2024, our journey began with a vision to simplify
-					and accelerate AI adoption for businesses across diverse
-					industries. Our founders, inspired by the transformative
-					potential of small language models (SLMs), set out to create
-					a platform that would bridge the gap between cutting-edge AI
-					research and practical applications.
+					{data.mainSubtext}
 				</p>
 			</div>
 
 			{/* Mission and Expertise Section */}
 			<div className="container flex flex-col gap-16 py-28">
 				<h2 className="font-light text-7xl text-gray">
-					Mission and Expertise
+					{data.Heading2}
 				</h2>
 
 				<div className="grid grid-cols-2">
 					<div className="z-10">
 						<div className="gradient-border translate-x-16 translate-y-64 bg-white/[0.06] p-8 backdrop-blur-2xl">
 							<h3 className="mb-6 font-light text-4xl text-gray">
-								Our Mission
+								{data.content[0].head}
 							</h3>
 							<p className="text-gray/80">
-								At Shodh.ai, we believe that SLMs will
-								revolutionize how enterprises build AI
-								applications. Our mission is to provide a
-								robust, user-friendly platform that addresses
-								the common challenges faced by businesses in
-								adopting AI.
+								{data.content[0].caption}
 							</p>
 						</div>
 					</div>
 
 					<div className="relative">
 						<Image
-							src="/our-mission.svg"
-							alt="Our Mission"
+							src={data.content[0].image}
+							alt={data.content[0].head}
 							width={100}
 							height={100}
 							className="aspect-square w-full"
@@ -63,8 +54,8 @@ export default function Page() {
 				<div className="grid grid-cols-2">
 					<div className="relative">
 						<Image
-							src="/what-we-do.svg"
-							alt="Our Mission"
+							src={data.content[1].image}
+							alt={data.content[1].head}
 							width={100}
 							height={100}
 							className="aspect-square w-full"
@@ -74,15 +65,10 @@ export default function Page() {
 					<div>
 						<div className="gradient-border translate-x-[-64px] translate-y-64 bg-white/[0.06] p-8 backdrop-blur-2xl">
 							<h3 className="mb-6 font-light text-4xl text-gray">
-								What We Do
+								{data.content[1].head}
 							</h3>
 							<p className="text-gray/80">
-								We offers the first app store for AI models
-								tailored for enterprises. Our platform is
-								designed to cater to specific needs, with a
-								strong focus on LLMs but extending beyond them.
-								We provide tools & resources to work
-								efficiently.
+								{data.content[1].caption}
 							</p>
 						</div>
 					</div>
@@ -91,7 +77,9 @@ export default function Page() {
 
 			{/* Leadership Section */}
 			<div className="container flex flex-col gap-32">
-				<h2 className="font-light text-7xl text-gray">Leadership</h2>
+				<h2 className="font-light text-7xl text-gray">
+					{data.Heading3}
+				</h2>
 
 				<div className="gradient-border grid grid-cols-2">
 					<div className="flex flex-col gap-4 p-12">
@@ -196,7 +184,9 @@ export default function Page() {
 
 			{/* Meet the Team Section */}
 			<div className="container flex flex-col gap-16 py-28">
-				<h2 className="font-light text-7xl text-gray">Meet the team</h2>
+				<h2 className="font-light text-7xl text-gray">
+					{data.Heading4}
+				</h2>
 
 				<div className="flex gap-8">
 					<Button

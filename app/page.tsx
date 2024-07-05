@@ -70,7 +70,7 @@ export default function Page() {
 					</div>
 
 					<p className="mb-16 font-light text-7xl text-gray leading-tight">
-						Explore our models and see what sets us apart
+						{data.card.heading}
 					</p>
 
 					<Link href={data.card.button.path}>

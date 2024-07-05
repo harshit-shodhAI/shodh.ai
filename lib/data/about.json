@@ -1,0 +1,74 @@
+{
+	"top-heading": "About Us",
+	"mainHeading": "Get to know the brains behind Shodh.AI",
+	"mainSubtext": "Founded in 2024, our journey began with a vision to simplify and accelerate AI adoption for businesses across diverse industries. Our founders, inspired by the transformative potential of small language models (SLMs), set out to create a platform that would bridge the gap between cutting-edge AI research and practical applications.",
+	"images": [
+		{
+			"src": "https://images.unsplash.com/photo-1612838320302-4",
+			"alt": "",
+			"caption": "30+ Projects Completed"
+		},
+		{
+			"src": "https://images.unsplash.com/photo-1612838320302-4",
+			"alt": "",
+			"caption": "100+ Clients"
+		},
+		{
+			"src": "https://images.unsplash.com/photo-1612838320302-4",
+			"alt": "",
+			"caption": "98% Satisfaction Rate"
+		},
+		{
+			"src": "https://images.unsplash.com/photo-1612838320302-4",
+			"alt": ""
+		}
+	],
+	"Heading2": "Mission and Expertise",
+	"content": [
+		{
+			"image": "https://images.unsplash.com/photo-1612838320302-4",
+			"head": "Our Mission",
+			"caption": "At Shodh.ai, we believe that SLMs will revolutionize how enterprises build AI applications. Our mission is to provide a robust, user-friendly platform that addresses the common challenges faced by businesses in adopting AI."
+		},
+		{
+			"image": "https://images.unsplash.com/photo-1612838320302-4",
+			"head": "What we do",
+			"caption": "We offers the first app store for AI models tailored for enterprises. Our platform is designed to cater to specific needs, with a strong focus on LLMs but extending beyond them. We provide tools & resources to work efficiently."
+		}
+	],
+	"Heading3": "Leadership",
+	"leaders": [
+		{
+			"name": "Dr. Arastu Sharma",
+			"designation": "CEO",
+			"linkedin": "#",
+			"info": "Dr. Arastu Sharma holds a PhD in Machine Learning from the University of Cambridge. During his tenure at Microsoft, he led a significant project that successfully reduced Azure data warehouse costs by over $100 million per month. Additionally, he developed a cutting-edge computer vision tool that was subsequently acquired by GSK.",
+			"associations": ["#", "#", "#"]
+		},
+		{
+			"name": "Dr. Neeta Trivedi",
+			"designation": "CTO",
+			"linkedin": "#",
+			"info": "Dr. Neeta Trivedi earned her PhD in Sensor Networks from the Indian Institute of Science (IISc). She has over 20 years of experience at DRDO, where she led AI projects for fighter jets and drones. She is also the founder of InferQ, a company specializing in defense AI projects.",
+			"associations": ["#", "#", "#"]
+		},
+		{
+			"name": "Marc Sommer",
+			"designation": "CPO",
+			"linkedin": "#",
+			"info": "Marc Sommer holds an MSc in Information Systems from the Technical University of Munich (TUM). He has experience consulting financial companies in Quantum Computing at Sopra Steria. Additionally, he is the founder of Machbarschaft, an award-winning ML-driven NGO.",
+			"associations": ["#", "#", "#"]
+		}
+	],
+	"Heading4": "Meet the team",
+	"memebers": [
+		{
+			"id": 123,
+			"name": "",
+			"designation": "",
+			"linkedin": "#",
+			"info": "",
+			"team": ""
+		}
+	]
+}

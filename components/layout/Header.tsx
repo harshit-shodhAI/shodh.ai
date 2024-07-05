@@ -1,4 +1,5 @@
 import { Button } from 'components/primitives';
+import data from 'lib/data/nav.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -17,19 +18,21 @@ const Header = () => {
 				/>
 
 				<nav className="mx-auto flex gap-12">
-					<Link href="/">Home</Link>
-					<Link href="/products">Products</Link>
-					<Link href="/about">About</Link>
-					<Link href="/process">Process</Link>
-					<Link href="/faq">FAQ</Link>
+					{data.navItems.map((item) => (
+						<Link href={item.path} key={item.name}>
+							{item.name}
+						</Link>
+					))}
 				</nav>
 
-				<Button
-					icon={<ArrowRight size={16} weight="bold" />}
-					twStyles="scale-90 ml-auto"
-				>
-					Explore Models
-				</Button>
+				<Link href={data.button.path}>
+					<Button
+						icon={<ArrowRight size={16} weight="bold" />}
+						twStyles="scale-90 ml-auto"
+					>
+						{data.button.name}
+					</Button>
+				</Link>
 			</div>
 
 			<div
