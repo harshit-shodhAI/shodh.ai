@@ -1,3 +1,4 @@
+import EmployeeCard from 'components/about/EmployeeCard';
 import { Button } from 'components/primitives';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -228,59 +229,53 @@ export default function Page() {
 				</div>
 
 				<div className="grid grid-cols-3 gap-8">
-					<div className="gradient-border flex flex-col gap-2 p-6">
-						<Image
-							src="/marc.svg"
-							alt="Marc Sommer"
-							height={512}
-							width={512}
-						/>
+					<EmployeeCard
+						image="/marc.svg"
+						name="Marc Sommer"
+						info="Never give up until it's done"
+						designation="ML Intern"
+						linkedin="/"
+					/>
 
-						<p className="my-1">"Never give up until it's done"</p>
+					<EmployeeCard
+						image="/marc.svg"
+						name="Marc Sommer"
+						info="Never give up until it's done"
+						designation="ML Intern"
+						linkedin="/"
+					/>
 
-						<div>
-							<h4 className="font-medium text-2xl text-white/90">
-								Marc Sommer
-							</h4>
-							<p className="text-white/60">ML Intern</p>
-						</div>
-					</div>
+					<EmployeeCard
+						image="/marc.svg"
+						name="Marc Sommer"
+						info="Never give up until it's done"
+						designation="ML Intern"
+						linkedin="/"
+					/>
 
-					<div className="gradient-border flex flex-col gap-2 p-6">
-						<Image
-							src="/marc.svg"
-							alt="Marc Sommer"
-							height={512}
-							width={512}
-						/>
+					<EmployeeCard
+						image="/marc.svg"
+						name="Marc Sommer"
+						info="Never give up until it's done"
+						designation="ML Intern"
+						linkedin="/"
+					/>
 
-						<p className="my-1">"Never give up until it's done"</p>
+					<EmployeeCard
+						image="/marc.svg"
+						name="Marc Sommer"
+						info="Never give up until it's done"
+						designation="ML Intern"
+						linkedin="/"
+					/>
 
-						<div>
-							<h4 className="font-medium text-2xl text-white/90">
-								Marc Sommer
-							</h4>
-							<p className="text-white/60">ML Intern</p>
-						</div>
-					</div>
-
-					<div className="gradient-border flex flex-col gap-2 p-6">
-						<Image
-							src="/marc.svg"
-							alt="Marc Sommer"
-							height={512}
-							width={512}
-						/>
-
-						<p className="my-1">"Never give up until it's done"</p>
-
-						<div>
-							<h4 className="font-medium text-2xl text-white/90">
-								Marc Sommer
-							</h4>
-							<p className="text-white/60">ML Intern</p>
-						</div>
-					</div>
+					<EmployeeCard
+						image="/marc.svg"
+						name="Marc Sommer"
+						info="Never give up until it's done"
+						designation="ML Intern"
+						linkedin="/"
+					/>
 				</div>
 			</div>
 		</>
