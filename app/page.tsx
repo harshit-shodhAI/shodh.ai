@@ -1,5 +1,7 @@
 import { Button } from 'components/primitives';
+import data from 'lib/data/home.json';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { ArrowRight, Check } from '@phosphor-icons/react/dist/ssr';
 
@@ -13,14 +15,14 @@ export default function Page() {
 					for Real-World Problems
 				</h1>
 				<p className="mb-6 max-w-[54ch] text-center opacity-80">
-					India's first Deep Learning Lab for AI Security! Build a
-					safer future with us. Develop AI solutions in Medicine,
-					Governance & more!
+					{data.mainSubtext}
 				</p>
 
-				<Button icon={<ArrowRight size={16} weight="bold" />}>
-					Explore Models
-				</Button>
+				<Link href={data.button.path}>
+					<Button icon={<ArrowRight size={16} weight="bold" />}>
+						{data.button.name}
+					</Button>
+				</Link>
 			</div>
 
 			{/* Product Section */}
@@ -28,17 +30,15 @@ export default function Page() {
 				<div className="flex items-end justify-between">
 					<div>
 						<p className="mb-6 font-medium text-sm uppercase tracking-widest">
-							Our Product
+							{data.product.heading}
 						</p>
 						<h2 className="max-w-[20ch] font-light text-7xl text-gray">
-							Multimodal Conversational AI
+							{data.product.name}
 						</h2>
 					</div>
 
 					<p className="max-w-[40ch] opacity-60">
-						This project aims to push the boundaries of
-						conversational AI by incorporating diverse data sources
-						and multimodal inputs, ultimately leading.
+						{data.product.breif}
 					</p>
 				</div>
 
@@ -55,30 +55,29 @@ export default function Page() {
 			<div className="container pb-28">
 				<div className="gradient-border p-16">
 					<div className="mb-8 flex gap-8">
-						<Button
-							iconPosition="before"
-							icon={<Check size={16} weight="bold" />}
-							rounded
-						>
-							Next-Gen
-						</Button>
-
-						<Button
-							iconPosition="before"
-							icon={<Check size={16} weight="bold" />}
-							rounded
-						>
-							Interdisciplinary
-						</Button>
+						{data.card.feature_list.map((feature) => (
+							<>
+								<Button
+									key={feature}
+									iconPosition="before"
+									icon={<Check size={16} weight="bold" />}
+									rounded
+								>
+									{feature}
+								</Button>
+							</>
+						))}
 					</div>
 
 					<p className="mb-16 font-light text-7xl text-gray leading-tight">
 						Explore our models and see what sets us apart
 					</p>
 
-					<Button icon={<ArrowRight size={16} weight="bold" />}>
-						Explore Models
-					</Button>
+					<Link href={data.card.button.path}>
+						<Button icon={<ArrowRight size={16} weight="bold" />}>
+							{data.card.button.name}
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</>

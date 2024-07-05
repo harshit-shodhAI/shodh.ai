@@ -1,0 +1,25 @@
+{
+  "mainHeading": "Advancing AI for Real-World Problems",
+  "mainSubtext": "India's 1st Deep Learning Lab for AI Security! Build a safer future with us. Develop AI solutions in Medicine, Governance & more!",
+  "button": {
+    "name": "Sign Up",
+    "path": "/signup"
+  },
+  "product": {
+    "heading": "Our Product",
+    "id": 1135,
+    "name": "Multimodal Conversational AI",
+    "breif": "This project aims to push the boundaries of conversational AI by incorporating diverse data sources and multimodal inputs, ultimately leading.",
+    "highlight": "Preprocessing Techniques: Meticulous techniques ensure the training data is clean and well-structured, providing a solid foundation for the chatbot's learning process.",
+    "host_link": "#",
+    "training": "#"
+  },
+  "card": {
+    "feature_list": ["Next-gen", "Interdisciplinary"],
+    "heading": "Explore our models and see what sets us apart",
+    "button": {
+      "name": "Explore",
+      "path": "/products"
+    }
+  }
+}
