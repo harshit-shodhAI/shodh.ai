@@ -14,12 +14,14 @@ const Button: FC<ButtonProps> = ({
 	rounded = false,
 	iconPosition = 'after',
 	twStyles,
+	...rest
 }) => {
 	return (
 		<div className="relative">
 			<button
 				type="button"
 				className={`${rounded ? 'pill-border' : 'gradient-border'} z-10 flex items-center justify-between gap-3 bg-white/[0.04] px-6 py-3 ${twStyles}`}
+				{...rest}
 			>
 				{iconPosition === 'before' && icon}
 				{children}
