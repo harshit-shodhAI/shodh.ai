@@ -37,16 +37,19 @@ export default function Page() {
 					icon={<ArrowRight size={16} weight="bold" />}
 					title="Easily Accessible"
 					description="Test"
+					link=""
 				/>
 				<FeatureCard
 					icon={<ArrowRight size={16} weight="bold" />}
 					title="Easily Accessible"
 					description="Test"
+					link=""
 				/>
 				<FeatureCard
 					icon={<ArrowRight size={16} weight="bold" />}
 					title="Easily Accessible"
 					description="Test"
+					link=""
 				/>
 			</div>
 
