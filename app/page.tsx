@@ -11,7 +11,9 @@ export default function Page() {
 			{/* Hero Section */}
 			<div className='container mx-auto flex h-[calc(100vh-4rem)] flex-col items-center justify-center gap-8 bg-[url("/hero-bg.gif")] bg-center bg-cover bg-no-repeat'>
 				<h1 className="gradient-hero-title max-w-[17ch] text-center font-light text-7xl leading-tight">
-					<span className="highlighted-title-text">{data.mainHeading[0]}</span>{' '}
+					<span className="highlighted-title-text">
+						{data.mainHeading[0]}
+					</span>{' '}
 					{data.mainHeading[1]}
 				</h1>
 				<p className="mb-6 max-w-[54ch] text-center opacity-80">

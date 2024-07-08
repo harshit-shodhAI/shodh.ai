@@ -59,32 +59,32 @@
 	background: linear-gradient(90deg, #0360E7 47.08%, rgba(3, 96, 231, 0) 94.16%);
 }
 
-/* .container {
+.container {
 	@apply mx-auto w-full;
 	padding-left: var(--container-padding);
 	padding-right: var(--container-padding);
-} */
+}
 
-/* @media (min-width: 640px) {
+@media screen and (min-width: 640px) {
 	.container {
 		max-width: 640px;
 	}
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.container {
 		max-width: 768px;
 	}
 }
-@media (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	.container {
 		max-width: 1024px;
 	}
 }
-@media (min-width: 1280px) {
+@media screen and (min-width: 1280px) {
 	.container {
 		max-width: 1280px;
 	}
-} */
+}
 
 ::-webkit-scrollbar {
     display: none;
