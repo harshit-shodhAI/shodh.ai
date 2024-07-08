@@ -1,5 +1,6 @@
 'use client';
 
+import FeatureCard from 'components/models/FeatureCard';
 import { Button } from 'components/primitives';
 import data from 'data/packages.json';
 import Image from 'next/image';
@@ -28,6 +29,25 @@ export default function Page() {
 						{data.button.text}
 					</Button>
 				</Link>
+			</div>
+
+			{/* Features Section */}
+			<div className="container flex justify-between gap-4">
+				<FeatureCard
+					icon={<ArrowRight size={16} weight="bold" />}
+					title="Easily Accessible"
+					description="Test"
+				/>
+				<FeatureCard
+					icon={<ArrowRight size={16} weight="bold" />}
+					title="Easily Accessible"
+					description="Test"
+				/>
+				<FeatureCard
+					icon={<ArrowRight size={16} weight="bold" />}
+					title="Easily Accessible"
+					description="Test"
+				/>
 			</div>
 
 			{/* Best Models Section */}
