@@ -1,0 +1,58 @@
+{
+    "links": [
+      {
+        "heading": "Useful Links",
+        "subLinks": [
+          {
+            "name": "Home",
+            "path": "/"
+          },
+          {
+            "name": "Packages",
+            "path": "/packages"
+          },
+          {
+            "name": "About",
+            "path": "/about"
+          }
+        ]
+      },
+      {
+        "heading": "Contact",
+        "subLinks": [
+          {
+            "name": "Get in touch",
+            "path": "/"
+          },
+          {
+            "name": "Linkedin",
+            "path": "/link"
+          },
+          {
+            "name": "Discord",
+            "path": "/link"
+          },
+          {
+            "name": "Email",
+            "path": "mailto:sayhi@shodh.ai"
+          },
+          {
+            "name": "Address",
+            "path": "#"
+          }
+        ]
+      }
+    ],
+    "copyright": {
+      "text": "©2021 All rights reserved",
+      "path": "#"
+    },
+    "privacy": {
+      "text": "Privacy Policy",
+      "path": "#"
+    },
+    "terms": {
+      "text": "Terms of Service",
+      "path": "#"
+    }
+  }

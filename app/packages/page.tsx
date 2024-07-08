@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from 'components/primitives';
-import data from 'lib/data/products.json';
+import data from 'data/packages.json';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';

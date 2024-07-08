@@ -1,6 +1,6 @@
 import EmployeeCard from 'components/about/EmployeeCard';
 import { Button } from 'components/primitives';
-import data from 'lib/data/about.json';
+import data from 'data/about.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
