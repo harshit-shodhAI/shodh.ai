@@ -3,7 +3,7 @@
   "subtext": "A family of lightweight, state-of-the art open models built from the same research and technology used to create the Shodh.AI models.",
   "button": {
     "text": "Explore",
-    "link": "/chat"
+    "link": "#"
   },
   "keyFeatures": [
     {
@@ -26,12 +26,6 @@
   "subtext2": "Explore our inhouse models",
   "content": "This project aims to push the boundaries of conversational AI by incorporating diverse data sources and multimodal inputs, ultimately leading to a more.",
   "models": [
-    {
-      "model_id": 1,
-      "name": "Shodh.ai Chatbot",
-      "highlight": "We trained our chatbots from scratch to make them effective, optimized, and highly efficient, providing users with accurate and specific answers, which leads to higher user satisfaction.",
-      "image": "https://images.unsplash.com/photo-1612838320302-4"
-    },
     {
       "model_id": 1,
       "name": "Shodh.ai Chatbot",
@@ -93,12 +87,12 @@
   ],
   "button2": {
     "text": "Apply Now",
-    "link": "/contact/?type=1"
+    "link": "https://discord.gg/ejHqRBrC"
   },
   "Heading5": "Join the community",
   "subtext5": "Join our community of developers, researchers, and entrepreneurs to stay updated on the latest news, events, and resources.",
   "button3": {
     "text": "Join Now",
-    "link": "#"
+    "link": "https://discord.gg/ejHqRBrC"
   }
 }

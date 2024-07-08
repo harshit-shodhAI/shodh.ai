@@ -21,24 +21,16 @@
         "heading": "Contact",
         "subLinks": [
           {
-            "name": "Get in touch",
-            "path": "/"
-          },
-          {
             "name": "Linkedin",
-            "path": "/link"
+            "path": "https://www.linkedin.com/company/shodh-ai/"
           },
           {
             "name": "Discord",
-            "path": "/link"
+            "path": "https://discord.gg/ejHqRBrC"
           },
           {
             "name": "Email",
             "path": "mailto:sayhi@shodh.ai"
-          },
-          {
-            "name": "Address",
-            "path": "#"
           }
         ]
       }

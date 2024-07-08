@@ -43,32 +43,92 @@
 			"designation": "CEO",
 			"linkedin": "#",
 			"info": "Dr. Arastu Sharma holds a PhD in Machine Learning from the University of Cambridge. During his tenure at Microsoft, he led a significant project that successfully reduced Azure data warehouse costs by over $100 million per month. Additionally, he developed a cutting-edge computer vision tool that was subsequently acquired by GSK.",
-			"associations": ["#", "#", "#"]
+			"associations": [
+				"#",
+				"#",
+				"#"
+			]
 		},
 		{
 			"name": "Dr. Neeta Trivedi",
 			"designation": "CTO",
 			"linkedin": "#",
 			"info": "Dr. Neeta Trivedi earned her PhD in Sensor Networks from the Indian Institute of Science (IISc). She has over 20 years of experience at DRDO, where she led AI projects for fighter jets and drones. She is also the founder of InferQ, a company specializing in defense AI projects.",
-			"associations": ["#", "#", "#"]
+			"associations": [
+				"#",
+				"#",
+				"#"
+			]
 		},
 		{
 			"name": "Marc Sommer",
 			"designation": "CPO",
 			"linkedin": "#",
 			"info": "Marc Sommer holds an MSc in Information Systems from the Technical University of Munich (TUM). He has experience consulting financial companies in Quantum Computing at Sopra Steria. Additionally, he is the founder of Machbarschaft, an award-winning ML-driven NGO.",
-			"associations": ["#", "#", "#"]
+			"associations": [
+				"#",
+				"#",
+				"#"
+			]
 		}
 	],
 	"Heading4": "Meet the team",
 	"memebers": [
 		{
-			"id": 123,
-			"name": "",
+			"id": 1,
+			"name": "Harshit Sandilya",
 			"designation": "",
-			"linkedin": "#",
-			"info": "",
-			"team": ""
+			"linkedin": "www.linkedin.com/in/harshit-sandilya",
+			"info": "Crafting cutting-edge solutions for use cases",
+			"team": "Research"
+		},
+		{
+			"id": 2,
+			"name": "Jatin Thakur",
+			"designation": "",
+			"linkedin": "https://www.linkedin.com/in/jatin-thakur-4ab38322a/",
+			"info": "Designing robust frameworks for high-impact implementations",
+			"team": "Research"
+		},
+		{
+			"id": 3,
+			"name": "Jay Shukla",
+			"designation": "",
+			"linkedin": "https://www.linkedin.com/in/jay-shukla-504800234/",
+			"info": "Retrieving and Cleaning Open-source Data",
+			"team": "Application"
+		},
+		{
+			"id": 4,
+			"name": "Ojusav Agarwal",
+			"designation": "",
+			"linkedin": "https://www.linkedin.com/in/ojusav-agarwal-678b2321a/",
+			"info": "Developing Advanced Pipelines for Data Processing and Information Retrieval",
+			"team": "Application"
+		},
+		{
+			"id": 5,
+			"name": "Anivesh Wale",
+			"designation": "Product Designer",
+			"linkedin": "https://www.linkedin.com/in/wale-anivesh-20a725219/",
+			"info": "Creating a minimalistic and aesthetically pleasing user experience",
+			"team": "Application"
+		},
+		{
+			"id": 6,
+			"name": "Achyut Verma",
+			"designation": "",
+			"linkedin": "https://www.linkedin.com/in/achyut-verma-88b13a273/",
+			"info": "Generating LLM Solutions",
+			"team": "Application"
+		},
+		{
+			"id": 11,
+			"name": "Rachit Jain",
+			"designation": "",
+			"linkedin": "linkedin.com/in/rachit-jain-0a8570223",
+			"info": "Generating Advanced Data Processing Pipelines",
+			"team": "Application"
 		}
 	]
 }
