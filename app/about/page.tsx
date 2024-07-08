@@ -29,26 +29,41 @@ export default function Page() {
 						<div className="font-bold text-2xl text-blue">30+</div>
 						<div>Projects Completed</div>
 					</div>
-					<div className="gradient-border row-span-3 row-start-4 rounded-xl bg-black text-white">
-						Pic
-					</div>
-					<div className="gradient-border row-span-4 row-start-1 rounded-xl bg-black text-white">
-						Pic
-					</div>
+					<div
+						className={
+							'gradient-border row-span-3 row-start-4 rounded-xl bg-center bg-cover bg-no-repeat'
+						}
+						style={{
+							backgroundImage: `url("${data.images[0].src}")`,
+						}}
+					/>
+					<div
+						className="gradient-border row-span-4 row-start-1 rounded-xl bg-center bg-cover bg-no-repeat"
+						style={{
+							backgroundImage: `url("${data.images[1].src}")`,
+						}}
+					/>
+
 					<div className="gradient-border row-span-2 row-start-5 flex flex-col items-center justify-center rounded-xl bg-black text-white">
 						<div className="font-bold text-2xl text-blue">1M+</div>
 						<div>Funding Raised</div>
 					</div>
-					<div className="gradient-border row-span-2 row-start-1 rounded-xl bg-black text-white">
-						Pic
-					</div>
+					<div
+						className="gradient-border row-span-2 row-start-1 rounded-xl bg-center bg-cover bg-no-repeat"
+						style={{
+							backgroundImage: `url("${data.images[2].src}")`,
+						}}
+					/>
 					<div className="gradient-border row-span-4 row-start-3 flex flex-col items-center justify-center rounded-xl bg-black text-white">
 						<div className="font-bold text-3xl text-blue">98%</div>
 						<div>Accuracy Rate</div>
 					</div>
-					<div className="gradient-border row-span-6 rounded-xl bg-black text-white">
-						Pic
-					</div>
+					<div
+						className="gradient-border row-span-6 rounded-xl bg-center bg-cover bg-no-repeat"
+						style={{
+							backgroundImage: `url("${data.images[3].src}")`,
+						}}
+					/>
 				</div>
 			</div>
 
@@ -134,6 +149,12 @@ export default function Page() {
 							developed a cutting-edge computer vision tool that
 							was subsequently acquired by GSK.
 						</p>
+
+						<div className="mt-auto grid grid-cols-3">
+							<span>Image 1</span>
+							<span>Image 2</span>
+							<span>Image 3</span>
+						</div>
 					</div>
 
 					<Image
@@ -175,6 +196,12 @@ export default function Page() {
 							the founder of InferQ, a company specializing in
 							defense AI projects.
 						</p>
+
+						<div className="mt-auto grid grid-cols-3">
+							<span>Image 1</span>
+							<span>Image 2</span>
+							<span>Image 3</span>
+						</div>
 					</div>
 				</div>
 
@@ -200,6 +227,12 @@ export default function Page() {
 							founder of Machbarschaft, an award-winning ML-driven
 							NGO.
 						</p>
+
+						<div className="mt-auto grid grid-cols-3">
+							<span>Image 1</span>
+							<span>Image 2</span>
+							<span>Image 3</span>
+						</div>
 					</div>
 
 					<Image
