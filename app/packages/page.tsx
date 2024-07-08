@@ -69,7 +69,7 @@ export default function Page() {
 					{data.models.map((model, i) => (
 						<div
 							// biome-ignore lint/nursery/useSortedClasses: Formatter breaking due to ternary operator.
-							className={`relative gradient-border p-8 col-span-${i % 3 === 0 ? 3 : 2}`}
+							className={`relative gradient-border p-8 ${i % 3 === 0 ? 'col-span-3' : 'col-span-2'}`}
 							key={model.model_id}
 						>
 							<h3 className="z-10 mb-8 text-2xl">{model.name}</h3>
