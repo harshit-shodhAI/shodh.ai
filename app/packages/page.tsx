@@ -92,6 +92,29 @@ export default function Page() {
 				</div>
 			</div>
 
+			{/* What Makes Us Different Section */}
+			<div className="container flex w-full gap-48 pb-28">
+				<div className="flex flex-col justify-center">
+					<div className="text-sm">{data.upperHeading3}</div>
+					<div className="mb-8 font-extralight text-7xl">
+						{data.Heading3}
+					</div>
+					<div>{data.subtext3}</div>
+				</div>
+				<div className="flex flex-col items-center gap-8">
+					{data.diffrences.map((diffrence) => (
+						<FeatureCard
+							icon={<ArrowRight size={16} weight="bold" />}
+							key={diffrence.heading}
+							title={diffrence.heading}
+							description={diffrence.subtext}
+							link=""
+							minimal
+						/>
+					))}
+				</div>
+			</div>
+
 			{/* Why Choose Us Section */}
 			<div className="container">
 				<div className="grid grid-cols-2">
