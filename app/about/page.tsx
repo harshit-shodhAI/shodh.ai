@@ -22,6 +22,36 @@ export default function Page() {
 				</p>
 			</div>
 
+			{/* Bento Grid */}
+			<div className="container mx-auto my-10">
+				<div className="grid h-56 grid-cols-4 grid-rows-6 gap-4">
+					<div className="gradient-border row-span-3 row-start-1 flex flex-col items-center justify-center rounded-xl bg-black text-white">
+						<div className="font-bold text-2xl text-blue">30+</div>
+						<div>Projects Completed</div>
+					</div>
+					<div className="gradient-border row-span-3 row-start-4 rounded-xl bg-black text-white">
+						Pic
+					</div>
+					<div className="gradient-border row-span-4 row-start-1 rounded-xl bg-black text-white">
+						Pic
+					</div>
+					<div className="gradient-border row-span-2 row-start-5 flex flex-col items-center justify-center rounded-xl bg-black text-white">
+						<div className="font-bold text-2xl text-blue">1M+</div>
+						<div>Funding Raised</div>
+					</div>
+					<div className="gradient-border row-span-2 row-start-1 rounded-xl bg-black text-white">
+						Pic
+					</div>
+					<div className="gradient-border row-span-4 row-start-3 flex flex-col items-center justify-center rounded-xl bg-black text-white">
+						<div className="font-bold text-3xl text-blue">98%</div>
+						<div>Accuracy Rate</div>
+					</div>
+					<div className="gradient-border row-span-6 rounded-xl bg-black text-white">
+						Pic
+					</div>
+				</div>
+			</div>
+
 			{/* Mission and Expertise Section */}
 			<div className="container flex flex-col gap-16 py-28">
 				<h2 className="font-light text-7xl text-gray">
