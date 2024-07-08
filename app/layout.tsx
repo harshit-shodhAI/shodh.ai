@@ -1,6 +1,6 @@
 import './global.css';
 
-import { Footer, Header } from 'components/layout';
+import { Header,Footer } from 'components/layout';
 import { Poppins } from 'next/font/google';
 
 import type { ReactNode } from 'react';

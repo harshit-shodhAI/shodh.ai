@@ -1,11 +1,11 @@
-import { footerLinkCategories, footerLinks } from 'lib/data';
+import data from 'data/footer.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const Footer = () => {
 	return (
 		<>
-			<div className="container mb-12 flex items-start justify-end gap-32">
+			<div className="container mb-12 flex items-start justify-end gap-32 w-screen overflow-x-hidden">
 				<Image
 					src="/logo.svg"
 					alt="Shodh.AI Logo"
@@ -14,17 +14,17 @@ const Footer = () => {
 					className="mr-auto"
 				/>
 
-				{footerLinkCategories.map((category) => (
-					<div key={category.category}>
+				{data.links.map((category,key) => (
+					<div key={key}>
 						<h3 className="mb-12 font-bold uppercase tracking-widest">
-							{category.title}
+							{category.heading}
 						</h3>
 
 						<ul className="flex flex-col gap-6">
-							{footerLinks[category.category].map((link, key) => (
+							{category.subLinks.map((link, key) => (
 								// biome-ignore lint/suspicious/noArrayIndexKey: <explanation>
 								<li key={key}>
-									<Link href={link.to}>{link.title}</Link>
+									<Link href={link.path}>{link.name}</Link>
 								</li>
 							))}
 						</ul>
@@ -35,11 +35,11 @@ const Footer = () => {
 			<div className="h-[1px] bg-white/20" />
 
 			<div className="container flex justify-between py-6 text-sm text-white/60">
-				<p>&copy; Copyright {new Date().getFullYear()}. Shodh.AI</p>
+				<p>{data.copyright.text}</p>
 
 				<div className="flex gap-6">
-					<Link href="/privacy-policy">Privacy Policy</Link>
-					<Link href="/terms">Terms & Conditions</Link>
+					<Link href="/privacy-policy">{data.privacy.text}</Link>
+					<Link href="/terms">{data.terms.text}</Link>
 				</div>
 			</div>
 		</>
