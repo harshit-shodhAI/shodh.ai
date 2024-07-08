@@ -26,11 +26,8 @@ const Header = () => {
 				</nav>
 
 				{data.button ? (
-					<Link href={data.button.path}>
-						<Button
-							icon={<ArrowRight size={16} weight="bold" />}
-							twStyles="scale-90 ml-auto mx-2"
-						>
+					<Link href={data.button.path} className="scale-90">
+						<Button icon={<ArrowRight size={16} weight="bold" />}>
 							{data.button.name}
 						</Button>
 					</Link>
