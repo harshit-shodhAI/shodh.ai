@@ -66,9 +66,10 @@
 			"id": 1,
 			"name": "Harshit Sandilya",
 			"designation": "",
-			"linkedin": "www.linkedin.com/in/harshit-sandilya",
+			"linkedin": "https://www.linkedin.com/in/harshit-sandilya",
 			"info": "Crafting cutting-edge solutions for use cases",
-			"team": "Research"
+			"team": "Research",
+			"image": "/harshit-sandilya.jpeg"
 		},
 		{
 			"id": 2,
@@ -76,7 +77,8 @@
 			"designation": "",
 			"linkedin": "https://www.linkedin.com/in/jatin-thakur-4ab38322a/",
 			"info": "Designing robust frameworks for high-impact implementations",
-			"team": "Research"
+			"team": "Research",
+			"image": "/jatin-thakur.jpeg"
 		},
 		{
 			"id": 3,
@@ -84,7 +86,8 @@
 			"designation": "",
 			"linkedin": "https://www.linkedin.com/in/jay-shukla-504800234/",
 			"info": "Retrieving and Cleaning Open-source Data",
-			"team": "Application"
+			"team": "Application",
+			"image": "/jay-shukla.jpeg"
 		},
 		{
 			"id": 4,
@@ -92,7 +95,8 @@
 			"designation": "",
 			"linkedin": "https://www.linkedin.com/in/ojusav-agarwal-678b2321a/",
 			"info": "Developing Advanced Pipelines for Data Processing and Information Retrieval",
-			"team": "Application"
+			"team": "Application",
+			"image": "/ojusav-agarwal.jpeg"
 		},
 		{
 			"id": 5,
@@ -100,7 +104,8 @@
 			"designation": "Product Designer",
 			"linkedin": "https://www.linkedin.com/in/wale-anivesh-20a725219/",
 			"info": "Creating a minimalistic and aesthetically pleasing user experience",
-			"team": "Application"
+			"team": "Application",
+			"image": "/anivesh-wale.jpeg"
 		},
 		{
 			"id": 6,
@@ -108,15 +113,17 @@
 			"designation": "",
 			"linkedin": "https://www.linkedin.com/in/achyut-verma-88b13a273/",
 			"info": "Generating LLM Solutions",
-			"team": "Application"
+			"team": "Application",
+			"image": "/achyut-verma.jpeg"
 		},
 		{
 			"id": 11,
 			"name": "Rachit Jain",
 			"designation": "",
-			"linkedin": "linkedin.com/in/rachit-jain-0a8570223",
+			"linkedin": "https://www.linkedin.com/in/rachit-jain-0a8570223",
 			"info": "Generating Advanced Data Processing Pipelines",
-			"team": "Application"
+			"team": "Application",
+			"image": "/rachit-jain.jpeg"
 		}
 	]
 }

@@ -129,26 +129,18 @@ export default function Page() {
 				<div className="gradient-border grid grid-cols-2">
 					<div className="flex flex-col gap-4 p-12">
 						<div className="flex items-center justify-between">
-							<h4 className="text-3xl">Dr. Arastu Sharma</h4>
+							<h4 className="text-3xl">{data.leaders[0].name}</h4>
 
-							<Link href="/">
+							<a href={data.leaders[0].linkedin}>
 								<LinkedinLogo size={24} />
-							</Link>
+							</a>
 						</div>
 
 						<span className="mt-[-10px] self-start rounded-md bg-blue/20 p-1.5 font-medium text-blue tracking-widest">
-							CEO
+							{data.leaders[0].designation}
 						</span>
 
-						<p className="opacity-70">
-							Dr. Arastu Sharma holds a PhD in Machine Learning
-							from the University of Cambridge. During his tenure
-							at Microsoft, he led a significant project that
-							successfully reduced Azure data warehouse costs by
-							over $100 million per month. Additionally, he
-							developed a cutting-edge computer vision tool that
-							was subsequently acquired by GSK.
-						</p>
+						<p className="opacity-70">{data.leaders[0].info}</p>
 
 						<div className="mt-auto grid grid-cols-3">
 							<span>Image 1</span>
@@ -285,7 +277,7 @@ export default function Page() {
 					{data.memebers.map((member) => (
 						<EmployeeCard
 							key={member.id}
-							image="/marc.svg"
+							image={member.image}
 							name={member.name}
 							info={member.info}
 							designation={member.designation}
