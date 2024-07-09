@@ -69,26 +69,56 @@ export default function Page() {
 				</div>
 
 				<div className="grid grid-cols-5 gap-8">
-					{data.models.map((model, i) => (
-						<div
-							// biome-ignore lint/nursery/useSortedClasses: Formatter breaking due to ternary operator.
-							className={`relative gradient-border p-8 ${i % 3 === 0 ? 'col-span-3' : 'col-span-2'}`}
-							key={model.model_id}
-						>
-							<h3 className="z-10 mb-8 text-2xl">{model.name}</h3>
-							<p className="z-10 w-1/2 opacity-60">
-								{model.highlight}
-							</p>
+					<div className="gradient-border relative col-span-3 p-8">
+						<h3 className="z-10 mb-8 text-2xl">
+							{data.models[0].name}
+						</h3>
+						<p className="z-10 w-1/2 opacity-60">
+							{data.models[0].highlight}
+						</p>
 
-							<Image
-								src={model.image}
-								alt={model.name}
-								height={500}
-								width={500}
-								className="absolute top-0 right-0 h-full w-1/2"
-							/>
-						</div>
-					))}
+						<Image
+							src={data.models[0].image}
+							alt={data.models[0].name}
+							height={500}
+							width={500}
+							className="absolute top-0 right-0 h-full w-1/2"
+						/>
+					</div>
+
+					<div className="gradient-border relative col-span-2 p-8">
+						<h3 className="z-10 mb-8 text-2xl">
+							{data.models[1].name}
+						</h3>
+						<p className="z-10 w-1/2 opacity-60">
+							{data.models[1].highlight}
+						</p>
+
+						<Image
+							src={data.models[1].image}
+							alt={data.models[1].name}
+							height={500}
+							width={500}
+							className="absolute top-0 right-0 h-full w-1/2"
+						/>
+					</div>
+
+					<div className="gradient-border relative col-span-5 p-8">
+						<h3 className="z-10 mb-8 text-2xl">
+							{data.models[2].name}
+						</h3>
+						<p className="z-10 w-1/2 opacity-60">
+							{data.models[2].highlight}
+						</p>
+
+						<Image
+							src={data.models[2].image}
+							alt={data.models[2].name}
+							height={500}
+							width={500}
+							className="absolute top-0 right-0 h-full w-1/2"
+						/>
+					</div>
 				</div>
 			</div>
 
