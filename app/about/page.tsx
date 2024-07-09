@@ -282,53 +282,16 @@ export default function Page() {
 				</div>
 
 				<div className="grid grid-cols-3 gap-8">
-					<EmployeeCard
-						image="/marc.svg"
-						name="Marc Sommer"
-						info="Never give up until it's done"
-						designation="ML Intern"
-						linkedin="/"
-					/>
-
-					<EmployeeCard
-						image="/marc.svg"
-						name="Marc Sommer"
-						info="Never give up until it's done"
-						designation="ML Intern"
-						linkedin="/"
-					/>
-
-					<EmployeeCard
-						image="/marc.svg"
-						name="Marc Sommer"
-						info="Never give up until it's done"
-						designation="ML Intern"
-						linkedin="/"
-					/>
-
-					<EmployeeCard
-						image="/marc.svg"
-						name="Marc Sommer"
-						info="Never give up until it's done"
-						designation="ML Intern"
-						linkedin="/"
-					/>
-
-					<EmployeeCard
-						image="/marc.svg"
-						name="Marc Sommer"
-						info="Never give up until it's done"
-						designation="ML Intern"
-						linkedin="/"
-					/>
-
-					<EmployeeCard
-						image="/marc.svg"
-						name="Marc Sommer"
-						info="Never give up until it's done"
-						designation="ML Intern"
-						linkedin="/"
-					/>
+					{data.memebers.map((member) => (
+						<EmployeeCard
+							key={member.id}
+							image="/marc.svg"
+							name={member.name}
+							info={member.info}
+							designation={member.designation}
+							linkedin={member.linkedin}
+						/>
+					))}
 				</div>
 			</div>
 		</>
