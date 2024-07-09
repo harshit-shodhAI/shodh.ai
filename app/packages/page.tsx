@@ -154,13 +154,13 @@ export default function Page() {
 							</button>
 						))}
 
-						<Link href={data.button2.link} className="my-12">
+						{/* <Link href={data.button2.link} className="my-12">
 							<Button
 								icon={<ArrowRight size={16} weight="bold" />}
 							>
 								{data.button2.text}
 							</Button>
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 			</div>
