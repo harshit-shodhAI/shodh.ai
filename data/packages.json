@@ -43,12 +43,6 @@
 			"name": "Shodh.ai Chatbot",
 			"highlight": "We trained our chatbots from scratch to make them effective, optimized, and highly efficient, providing users with accurate and specific answers, which leads to higher user satisfaction.",
 			"image": "https://images.unsplash.com/photo-1612838320302-4"
-		},
-		{
-			"model_id": 1,
-			"name": "Shodh.ai Chatbot",
-			"highlight": "We trained our chatbots from scratch to make them effective, optimized, and highly efficient, providing users with accurate and specific answers, which leads to higher user satisfaction.",
-			"image": "https://images.unsplash.com/photo-1612838320302-4"
 		}
 	],
 	"upperHeading3": "What makes us different",
@@ -93,12 +87,12 @@
 	],
 	"button2": {
 		"text": "Apply Now",
-		"link": "/contact/?type=1"
+		"link": "https://discord.gg/wbP7AQvM"
 	},
 	"Heading5": "Join the community",
 	"subtext5": "Join our community of developers, researchers, and entrepreneurs to stay updated on the latest news, events, and resources.",
 	"button3": {
 		"text": "Join Now",
-		"link": "#"
+		"link": "https://discord.gg/wbP7AQvM"
 	}
 }
