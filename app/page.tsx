@@ -29,7 +29,7 @@ export default function Page() {
 
 			{/* Product Section */}
 			<div className="container flex flex-col gap-16 py-28">
-				<div className="flex items-end justify-between">
+				<div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:items-end md:text-left">
 					<div>
 						<p className="mb-6 font-medium text-sm uppercase tracking-widest">
 							{data.product.heading}
