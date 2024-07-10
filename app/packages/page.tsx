@@ -32,7 +32,7 @@ export default function Page() {
 			</div>
 
 			{/* Features Section */}
-			<div className="container flex justify-between gap-4">
+			<div className="container grid grid-cols-1 gap-4 md:grid-cols-3">
 				<FeatureCard
 					icon={<ArrowRight size={16} weight="bold" />}
 					title="Easily Accessible"
@@ -55,7 +55,7 @@ export default function Page() {
 
 			{/* Best Models Section */}
 			<div className="container flex flex-col gap-16 py-28">
-				<div className="flex items-end justify-between">
+				<div className="flex flex-col items-center justify-between gap-4 text-center md:flex-row md:items-end md:text-left">
 					<div>
 						<p className="mb-6 font-medium text-sm uppercase tracking-widest">
 							{data.Heading2}
@@ -68,8 +68,8 @@ export default function Page() {
 					<p className="max-w-[40ch] opacity-60">{data.content}</p>
 				</div>
 
-				<div className="grid grid-cols-5 gap-8">
-					<div className="gradient-border relative col-span-3 p-8">
+				<div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
+					<div className="gradient-border relative p-8 lg:col-span-3">
 						<h3 className="z-10 mb-8 text-2xl">
 							{data.models[0].name}
 						</h3>
@@ -86,7 +86,7 @@ export default function Page() {
 						/>
 					</div>
 
-					<div className="gradient-border relative col-span-2 p-8">
+					<div className="gradient-border relative p-8 lg:col-span-2">
 						<h3 className="z-10 mb-8 text-2xl">
 							{data.models[1].name}
 						</h3>
@@ -103,7 +103,7 @@ export default function Page() {
 						/>
 					</div>
 
-					<div className="gradient-border relative col-span-5 p-8">
+					<div className="gradient-border relative p-8 lg:col-span-5">
 						<h3 className="z-10 mb-8 text-2xl">
 							{data.models[2].name}
 						</h3>
@@ -123,13 +123,17 @@ export default function Page() {
 			</div>
 
 			{/* What Makes Us Different Section */}
-			<div className="container flex w-full gap-48 pb-28">
+			<div className="container flex w-full flex-col gap-8 pb-28 lg:flex-row lg:gap-48">
 				<div className="flex flex-col justify-center">
-					<div className="text-sm">{data.upperHeading3}</div>
-					<div className="mb-8 font-extralight text-7xl">
+					<div className="text-center text-sm md:text-start">
+						{data.upperHeading3}
+					</div>
+					<div className="mb-8 text-center font-extralight text-7xl md:text-start">
 						{data.Heading3}
 					</div>
-					<div>{data.subtext3}</div>
+					<div className="text-center md:text-start">
+						{data.subtext3}
+					</div>
 				</div>
 				<div className="flex flex-col items-center gap-8">
 					{data.diffrences.map((diffrence) => (
@@ -147,13 +151,13 @@ export default function Page() {
 
 			{/* Why Choose Us Section */}
 			<div className="container">
-				<div className="grid grid-cols-2">
-					<div className="gradient-border">left</div>
-					<div className="ml-10 flex flex-col">
-						<p className="mb-6 font-medium text-sm uppercase tracking-widest">
+				<div className="grid md:grid-cols-2">
+					<div className="gradient-border my-6 md:my-0">left</div>
+					<div className="flex flex-col md:ml-10">
+						<p className="mb-6 text-center font-medium text-sm uppercase tracking-widest md:text-start">
 							{data.upperHeading4}
 						</p>
-						<h2 className="mb-16 max-w-[20ch] font-light text-7xl text-gray">
+						<h2 className="mb-16 text-center font-light text-7xl text-gray md:max-w-[20ch] md:text-start">
 							{data.Heading4}
 						</h2>
 
