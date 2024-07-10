@@ -43,21 +43,60 @@
 			"designation": "CEO",
 			"linkedin": "#",
 			"info": "Dr. Arastu Sharma holds a PhD in Machine Learning from the University of Cambridge. During his tenure at Microsoft, he led a significant project that successfully reduced Azure data warehouse costs by over $100 million per month. Additionally, he developed a cutting-edge computer vision tool that was subsequently acquired by GSK.",
-			"associations": ["#", "#", "#"]
+			"associations": [
+				{
+					"image": "/cambridge.svg",
+					"alt": "University of Cambridge"
+				},
+				{
+					"image": "/microsoft.svg",
+					"alt": "Microsoft"
+				},
+				{
+					"image": "/gsk.svg",
+					"alt": "GSK"
+				}
+			]
 		},
 		{
 			"name": "Dr. Neeta Trivedi",
 			"designation": "CTO",
 			"linkedin": "#",
 			"info": "Dr. Neeta Trivedi earned her PhD in Sensor Networks from the Indian Institute of Science (IISc). She has over 20 years of experience at DRDO, where she led AI projects for fighter jets and drones. She is also the founder of InferQ, a company specializing in defense AI projects.",
-			"associations": ["#", "#", "#"]
+			"associations": [
+				{
+					"image": "/iisc.svg",
+					"alt": "Indian Institute of Science - IISC"
+				},
+				{
+					"image": "/inferigence.svg",
+					"alt": "Inferigence Quotient"
+				},
+				{
+					"image": "/drdo.svg",
+					"alt": "Defense Research and Development Organization - DRDO"
+				}
+			]
 		},
 		{
 			"name": "Marc Sommer",
 			"designation": "CPO",
 			"linkedin": "#",
 			"info": "Marc Sommer holds an MSc in Information Systems from the Technical University of Munich (TUM). He has experience consulting financial companies in Quantum Computing at Sopra Steria. Additionally, he is the founder of Machbarschaft, an award-winning ML-driven NGO.",
-			"associations": ["#", "#", "#"]
+			"associations": [
+				{
+					"image": "/tum.svg",
+					"alt": "TIM"
+				},
+				{
+					"image": "/sopra-steria.svg",
+					"alt": "Sopra Steria"
+				},
+				{
+					"image": "/spread.svg",
+					"alt": "Spread"
+				}
+			]
 		}
 	],
 	"Heading4": "Meet the team",

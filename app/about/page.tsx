@@ -143,9 +143,27 @@ export default function Page() {
 						<p className="opacity-70">{data.leaders[0].info}</p>
 
 						<div className="mt-auto grid grid-cols-3">
-							<span>Image 1</span>
-							<span>Image 2</span>
-							<span>Image 3</span>
+							<Image
+								src={data.leaders[0].associations[0].image}
+								alt={data.leaders[0].associations[0].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
+							<Image
+								src={data.leaders[0].associations[1].image}
+								alt={data.leaders[0].associations[1].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
+							<Image
+								src={data.leaders[0].associations[2].image}
+								alt={data.leaders[0].associations[2].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
 						</div>
 					</div>
 
@@ -190,9 +208,27 @@ export default function Page() {
 						</p>
 
 						<div className="mt-auto grid grid-cols-3">
-							<span>Image 1</span>
-							<span>Image 2</span>
-							<span>Image 3</span>
+							<Image
+								src={data.leaders[1].associations[0].image}
+								alt={data.leaders[1].associations[0].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
+							<Image
+								src={data.leaders[1].associations[1].image}
+								alt={data.leaders[1].associations[1].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
+							<Image
+								src={data.leaders[1].associations[2].image}
+								alt={data.leaders[1].associations[2].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
 						</div>
 					</div>
 				</div>
@@ -221,9 +257,27 @@ export default function Page() {
 						</p>
 
 						<div className="mt-auto grid grid-cols-3">
-							<span>Image 1</span>
-							<span>Image 2</span>
-							<span>Image 3</span>
+							<Image
+								src={data.leaders[2].associations[0].image}
+								alt={data.leaders[2].associations[0].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
+							<Image
+								src={data.leaders[2].associations[1].image}
+								alt={data.leaders[2].associations[1].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
+							<Image
+								src={data.leaders[2].associations[2].image}
+								alt={data.leaders[2].associations[2].alt}
+								height={90}
+								width={160}
+								className="aspect-video"
+							/>
 						</div>
 					</div>
 
