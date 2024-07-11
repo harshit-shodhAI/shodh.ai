@@ -152,7 +152,8 @@ export default function Page() {
 			{/* Why Choose Us Section */}
 			<div className="container">
 				<div className="grid md:grid-cols-2">
-					<div className="gradient-border my-6 md:my-0">left</div>
+					{/* biome-ignore lint/nursery/useSortedClasses: bg-[url()] breaks formatter */}
+					<div className="hidden lg:block gradient-border my-6 md:my-0 bg-[url('/group-628050.png')] bg-no-repeat bg-center bg-cover" />
 					<div className="flex flex-col md:ml-10">
 						<p className="mb-6 text-center font-medium text-sm uppercase tracking-widest md:text-start">
 							{data.upperHeading4}
