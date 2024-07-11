@@ -82,7 +82,7 @@ export default function Page() {
 						</p>
 					</div>
 
-					<div className="hover-reveal gradient-border absolute right-0 bottom-0 z-20 flex hidden aspect-square translate-x-[-25px] translate-y-[25px] flex-col justify-center gap-4 bg-black/10 px-4 py-2 backdrop-blur-lg lg:block">
+					<div className="hover-reveal gradient-border absolute right-0 bottom-0 z-20 hidden aspect-square translate-x-[-25px] translate-y-[25px] flex-col justify-center gap-4 bg-black/10 px-4 py-2 backdrop-blur-lg lg:flex">
 						<Image
 							src="/graph.png"
 							alt="Model Architecture"
