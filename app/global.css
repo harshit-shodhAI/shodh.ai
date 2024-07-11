@@ -59,6 +59,10 @@
 	background: linear-gradient(90deg, #0360E7 47.08%, rgba(3, 96, 231, 0) 94.16%);
 }
 
+.hover-reveal:hover ~ .revealable {
+	display: block!important;
+}
+
 .container {
 	@apply mx-auto w-full;
 	padding-left: var(--container-padding);

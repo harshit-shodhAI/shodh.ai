@@ -3,7 +3,9 @@ import data from 'data/home.json';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ArrowRight, Check } from '@phosphor-icons/react/dist/ssr';
+import {
+    ArrowRight, Check, CheckCircle, Lightning, MagnifyingGlass
+} from '@phosphor-icons/react/dist/ssr';
 
 export default function Page() {
 	return (
@@ -44,13 +46,63 @@ export default function Page() {
 					</p>
 				</div>
 
-				<Image
-					src="/product.jpeg"
-					alt="Our Product - Multimodel Conversational AI"
-					width={3000}
-					height={1000}
-					className="rounded-3xl"
-				/>
+				<div className="relative">
+					<Image
+						src="/product.jpeg"
+						alt="Our Product - Multimodel Conversational AI"
+						width={3000}
+						height={1000}
+						className="rounded-3xl"
+					/>
+
+					<div className="gradient-border absolute top-20 left-0 z-20 translate-x-[-25px] bg-black/10 p-8 backdrop-blur-lg">
+						<Lightning size={32} />
+						<h3 className="my-4 text-2xl text-gray">
+							Preprocessing Techniques
+						</h3>
+						<p className="mt-2 max-w-[40ch] opacity-80">
+							{data.product.highlight}
+						</p>
+					</div>
+
+					<div className="gradient-border absolute top-20 right-[-25px] z-20 flex items-center gap-2 rounded-full! bg-black/10 px-4 py-2 backdrop-blur-lg">
+						<MagnifyingGlass size={20} weight="duotone" />
+						<p className="max-w-[40ch] truncate text-gray">
+							Halloween is a time for elaborate costumes,
+							collecting sweet treats, bobbing for apples, telling
+							ghost stories by the light of a jack-o-lantern and
+							watching
+						</p>
+					</div>
+
+					<div className="gradient-border absolute top-full left-1/2 z-20 flex translate-x-[-50%] translate-y-[-50%] items-center gap-2 rounded-full! bg-black/10 px-4 py-2 backdrop-blur-lg">
+						<CheckCircle size={20} weight="duotone" />
+						<p className="text-gray">
+							A robust framework handles the functionalities
+						</p>
+					</div>
+
+					<div className="hover-reveal gradient-border absolute right-0 bottom-0 z-20 flex aspect-square translate-x-[-25px] translate-y-[25px] flex-col justify-center gap-4 bg-black/10 px-4 py-2 backdrop-blur-lg">
+						<Image
+							src="/graph.png"
+							alt="Model Architecture"
+							height={90}
+							width={160}
+							className="w-full"
+						/>
+						<p className="max-w-[12ch] text-2xl text-gray">
+							Model Architecture
+						</p>
+					</div>
+
+					<Image
+						src="/plot-dark.png"
+						alt="Our Product - Multimodel Conversational AI"
+						width={3000}
+						height={1000}
+						className="revealable absolute top-0 left-0 z-10 hidden h-full w-full rounded-3xl"
+					/>
+				</div>
 			</div>
 
 			{/* CTA Section */}
