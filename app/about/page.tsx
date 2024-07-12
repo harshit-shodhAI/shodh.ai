@@ -158,7 +158,7 @@ export default function Page() {
 					</div>
 
 					<Image
-						src="/arastu.svg"
+						src={require('public/arastu.svg')}
 						alt="Dr. Arastu Sharma"
 						className="scale-105"
 					/>
@@ -166,7 +166,7 @@ export default function Page() {
 
 				<div className="gradient-border grid grid-cols-2">
 					<Image
-						src="/neeta.svg"
+						src={require('public/neeta.svg')}
 						alt="Dr. Neeta Trivedi"
 						className="scale-105"
 					/>
@@ -256,7 +256,7 @@ export default function Page() {
 					</div>
 
 					<Image
-						src="/marc.svg"
+						src={require('public/marc.svg')}
 						alt="Marc Sommer"
 						className="scale-105"
 					/>

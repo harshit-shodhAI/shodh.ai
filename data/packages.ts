@@ -53,7 +53,7 @@ const data = {
 			name: 'Shodh.ai Chatbot',
 			highlight:
 				'We trained our chatbots from scratch to make them effective, optimized, and highly efficient, providing users with accurate and specific answers, which leads to higher user satisfaction.',
-			image: 'https://images.unsplash.com/photo-1612838320302-4',
+			image: Group628048,
 		},
 	],
 	upperHeading3: 'What makes us different',

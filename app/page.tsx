@@ -52,7 +52,7 @@ export default function Page() {
 
 				<div className="relative">
 					<Image
-						src="/product.jpeg"
+						src={require('public/product.jpeg')}
 						alt="Our Product - Multimodel Conversational AI"
 						className="rounded-3xl"
 					/>
@@ -86,7 +86,7 @@ export default function Page() {
 
 					<div className="hover-reveal gradient-border absolute right-0 bottom-0 z-20 hidden aspect-square translate-x-[-25px] translate-y-[25px] flex-col justify-center gap-4 bg-black/10 px-4 py-2 backdrop-blur-lg lg:flex">
 						<Image
-							src="/graph.png"
+							src={require('public/graph.png')}
 							alt="Model Architecture"
 							className="w-full"
 						/>
@@ -96,7 +96,7 @@ export default function Page() {
 					</div>
 
 					<Image
-						src="/plot-dark.png"
+						src={require('public/plot-dark.png')}
 						alt="Our Product - Multimodel Conversational AI"
 						className="revealable absolute top-0 left-0 z-10 hidden h-full w-full rounded-3xl"
 					/>
