@@ -1,10 +1,14 @@
 import { Button } from 'components/primitives';
-import data from 'data/home.json';
+import data from 'data/home';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import {
-    ArrowRight, Check, CheckCircle, Lightning, MagnifyingGlass
+	ArrowRight,
+	Check,
+	CheckCircle,
+	Lightning,
+	MagnifyingGlass,
 } from '@phosphor-icons/react/dist/ssr';
 
 export default function Page() {

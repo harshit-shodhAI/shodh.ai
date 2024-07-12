@@ -2,10 +2,11 @@ import Image from 'next/image';
 
 import { LinkedinLogo } from '@phosphor-icons/react/dist/ssr';
 
+import type { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import type { FC } from 'react';
 
 type EmployeeCardProps = {
-	image: string;
+	image: string | StaticImport;
 	name: string;
 	info: string;
 	designation: string;
