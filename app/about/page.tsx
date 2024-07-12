@@ -89,8 +89,6 @@ export default function Page() {
 						<Image
 							src={data.content[0].image}
 							alt={data.content[0].head}
-							width={100}
-							height={100}
 							className="aspect-square w-full"
 						/>
 					</div>
@@ -101,8 +99,6 @@ export default function Page() {
 						<Image
 							src={data.content[1].image}
 							alt={data.content[1].head}
-							width={100}
-							height={100}
 							className="aspect-square w-full"
 						/>
 					</div>
@@ -146,22 +142,16 @@ export default function Page() {
 							<Image
 								src={data.leaders[0].associations[0].image}
 								alt={data.leaders[0].associations[0].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 							<Image
 								src={data.leaders[0].associations[1].image}
 								alt={data.leaders[0].associations[1].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 							<Image
 								src={data.leaders[0].associations[2].image}
 								alt={data.leaders[0].associations[2].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 						</div>
@@ -170,8 +160,6 @@ export default function Page() {
 					<Image
 						src="/arastu.svg"
 						alt="Dr. Arastu Sharma"
-						height={1024}
-						width={1024}
 						className="scale-105"
 					/>
 				</div>
@@ -180,8 +168,6 @@ export default function Page() {
 					<Image
 						src="/neeta.svg"
 						alt="Dr. Neeta Trivedi"
-						height={1024}
-						width={1024}
 						className="scale-105"
 					/>
 
@@ -211,22 +197,16 @@ export default function Page() {
 							<Image
 								src={data.leaders[1].associations[0].image}
 								alt={data.leaders[1].associations[0].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 							<Image
 								src={data.leaders[1].associations[1].image}
 								alt={data.leaders[1].associations[1].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 							<Image
 								src={data.leaders[1].associations[2].image}
 								alt={data.leaders[1].associations[2].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 						</div>
@@ -260,22 +240,16 @@ export default function Page() {
 							<Image
 								src={data.leaders[2].associations[0].image}
 								alt={data.leaders[2].associations[0].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 							<Image
 								src={data.leaders[2].associations[1].image}
 								alt={data.leaders[2].associations[1].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 							<Image
 								src={data.leaders[2].associations[2].image}
 								alt={data.leaders[2].associations[2].alt}
-								height={90}
-								width={160}
 								className="aspect-video"
 							/>
 						</div>
@@ -284,8 +258,6 @@ export default function Page() {
 					<Image
 						src="/marc.svg"
 						alt="Marc Sommer"
-						height={1024}
-						width={1024}
 						className="scale-105"
 					/>
 				</div>

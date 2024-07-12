@@ -54,8 +54,6 @@ export default function Page() {
 					<Image
 						src="/product.jpeg"
 						alt="Our Product - Multimodel Conversational AI"
-						width={3000}
-						height={1000}
 						className="rounded-3xl"
 					/>
 
@@ -90,8 +88,6 @@ export default function Page() {
 						<Image
 							src="/graph.png"
 							alt="Model Architecture"
-							height={90}
-							width={160}
 							className="w-full"
 						/>
 						<p className="max-w-[12ch] text-2xl text-gray">
@@ -102,8 +98,6 @@ export default function Page() {
 					<Image
 						src="/plot-dark.png"
 						alt="Our Product - Multimodel Conversational AI"
-						width={3000}
-						height={1000}
 						className="revealable absolute top-0 left-0 z-10 hidden h-full w-full rounded-3xl"
 					/>
 				</div>

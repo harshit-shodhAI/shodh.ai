@@ -2,7 +2,7 @@
 
 import FeatureCard from 'components/models/FeatureCard';
 import { Button } from 'components/primitives';
-import data from 'data/packages.json';
+import data from 'data/packages';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -80,8 +80,6 @@ export default function Page() {
 						<Image
 							src={data.models[0].image}
 							alt={data.models[0].name}
-							height={500}
-							width={500}
 							className="absolute top-0 right-0 h-full w-1/2"
 						/>
 					</div>
@@ -97,8 +95,6 @@ export default function Page() {
 						<Image
 							src={data.models[1].image}
 							alt={data.models[1].name}
-							height={500}
-							width={500}
 							className="absolute top-0 right-0 h-full w-1/2"
 						/>
 					</div>
@@ -114,8 +110,6 @@ export default function Page() {
 						<Image
 							src={data.models[2].image}
 							alt={data.models[2].name}
-							height={500}
-							width={500}
 							className="absolute top-0 right-0 h-full w-1/2"
 						/>
 					</div>

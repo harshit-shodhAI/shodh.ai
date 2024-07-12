@@ -22,13 +22,7 @@ const EmployeeCard: FC<EmployeeCardProps> = ({
 }) => {
 	return (
 		<div className="gradient-border flex flex-col gap-2 p-6">
-			<Image
-				src={image}
-				alt={name}
-				height={512}
-				width={512}
-				className="aspect-square"
-			/>
+			<Image src={image} alt={name} className="aspect-square" />
 
 			<p className="my-1">"{info}"</p>
 
