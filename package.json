@@ -23,6 +23,7 @@
     "postcss": "^8.4.38",
     "react": "latest",
     "react-dom": "latest",
+    "sharp": "^0.33.4",
     "tailwindcss": "next"
   }
 }

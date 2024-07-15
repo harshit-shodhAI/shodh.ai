@@ -4,11 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import {
-	ArrowRight,
-	Check,
-	CheckCircle,
-	Lightning,
-	MagnifyingGlass,
+    ArrowRight, Check, CheckCircle, Lightning, MagnifyingGlass
 } from '@phosphor-icons/react/dist/ssr';
 
 export default function Page() {
@@ -52,7 +48,7 @@ export default function Page() {
 
 				<div className="relative">
 					<Image
-						src={require('public/product.jpeg')}
+						src={require('public/product.png')}
 						alt="Our Product - Multimodel Conversational AI"
 						className="rounded-3xl"
 					/>
