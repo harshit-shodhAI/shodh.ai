@@ -10,7 +10,7 @@ const Header = () => {
 		<>
 			<div className="container flex h-16 w-screen items-center justify-center overflow-x-hidden">
 				<Image
-					src="/logo.svg"
+					src="/logo.png"
 					alt="Shodh.AI Logo"
 					width={120}
 					height={50}

@@ -7,7 +7,7 @@ const Footer = () => {
 		<>
 			<div className="container mb-12 flex items-start justify-end gap-32 w-screen overflow-x-hidden">
 				<Image
-					src="/logo.svg"
+					src="/logo.png"
 					alt="Shodh.AI Logo"
 					width={120}
 					height={50}

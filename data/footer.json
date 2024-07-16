@@ -1,7 +1,7 @@
 {
     "links": [
       {
-        "heading": "Useful Links",
+        "heading": "Menu",
         "subLinks": [
           {
             "name": "Home",
@@ -41,10 +41,10 @@
     },
     "privacy": {
       "text": "Privacy Policy",
-      "path": "#"
+      "path": "https://drive.google.com/file/d/1wGcMSm0KuHA222oub-UrHd6QNjBwEjKZ/view?usp=sharing"
     },
     "terms": {
       "text": "Terms of Service",
-      "path": "#"
+      "path": "https://drive.google.com/file/d/1xLspUhSgFocMYDMGC3q0tFuAxrRR4eNp/view?usp=sharing"
     }
   }

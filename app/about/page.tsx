@@ -138,21 +138,21 @@ export default function Page() {
 
 						<p className="opacity-70">{data.leaders[0].info}</p>
 
-						<div className="mt-auto grid grid-cols-3">
+						<div className="mt-auto flex flex-row items-center content-between justify-between gap-2">
 							<Image
 								src={data.leaders[0].associations[0].image}
 								alt={data.leaders[0].associations[0].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
 							<Image
 								src={data.leaders[0].associations[1].image}
 								alt={data.leaders[0].associations[1].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
 							<Image
 								src={data.leaders[0].associations[2].image}
 								alt={data.leaders[0].associations[2].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
 						</div>
 					</div>
@@ -163,12 +163,12 @@ export default function Page() {
 						className="scale-105"
 					/>
 				</div>
-
-				<div className="gradient-border grid grid-cols-2">
+						
+				{/* <div className="container grid grid-cols-2 h-auto">
 					<Image
 						src={require('public/neeta.png')}
 						alt="Dr. Neeta Trivedi"
-						className="scale-105"
+						className="scale-80"
 					/>
 
 					<div className="flex flex-col gap-4 p-12">
@@ -193,21 +193,69 @@ export default function Page() {
 							defense AI projects.
 						</p>
 
-						<div className="mt-auto grid grid-cols-3">
+						<div className="mt-auto flex flex-row items-center content-between justify-between gap-2">
 							<Image
 								src={data.leaders[1].associations[0].image}
 								alt={data.leaders[1].associations[0].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
 							<Image
 								src={data.leaders[1].associations[1].image}
 								alt={data.leaders[1].associations[1].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
 							<Image
 								src={data.leaders[1].associations[2].image}
 								alt={data.leaders[1].associations[2].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
+							/>
+						</div>
+					</div>
+				</div> */}
+
+				<div className="gradient-border grid grid-cols-2">
+					<Image
+						src={require('public/neeta.png')}
+						alt="Dr. Neeta Trivedi"
+						className="h-4/5 w-auto"
+					/>
+					<div className="flex flex-col gap-4 p-12">
+						<div className="flex items-center justify-between">
+							<h4 className="text-3xl">Dr. Neeta Trivedi</h4>
+
+							<Link href="/">
+								<LinkedinLogo size={24} />
+							</Link>
+						</div>
+
+						<span className="mt-[-10px] self-start rounded-md bg-blue/20 p-1.5 font-medium text-blue tracking-widest">
+							CTO
+						</span>
+
+						<p className="opacity-70">
+						Dr. Neeta Trivedi earned her PhD in Sensor Networks
+							from the Indian Institute of Science (IISc). She has
+							over 20 years of experience at DRDO, where she led
+							AI projects for fighter jets and drones. She is also
+							the founder of InferQ, a company specializing in
+							defense AI projects.
+						</p>
+
+						<div className="mt-auto flex flex-row items-center content-between justify-between gap-2">
+							<Image
+								src={data.leaders[1].associations[0].image}
+								alt={data.leaders[1].associations[0].alt}
+								className="w-auto h-4/5"
+							/>
+							<Image
+								src={data.leaders[1].associations[1].image}
+								alt={data.leaders[1].associations[1].alt}
+								className="w-auto h-4/5"
+							/>
+							<Image
+								src={data.leaders[1].associations[2].image}
+								alt={data.leaders[1].associations[2].alt}
+								className="w-auto h-4/5"
 							/>
 						</div>
 					</div>
@@ -236,21 +284,21 @@ export default function Page() {
 							NGO.
 						</p>
 
-						<div className="mt-auto grid grid-cols-3">
+						<div className="mt-auto flex flex-row items-center content-between justify-between gap-2">
 							<Image
 								src={data.leaders[2].associations[0].image}
 								alt={data.leaders[2].associations[0].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
-							<Image
+							{/* <Image
 								src={data.leaders[2].associations[1].image}
 								alt={data.leaders[2].associations[1].alt}
-								className="aspect-video"
-							/>
+								className="w-auto h-4/5 max-w-2xl"
+							/> */}
 							<Image
 								src={data.leaders[2].associations[2].image}
 								alt={data.leaders[2].associations[2].alt}
-								className="aspect-video"
+								className="w-auto h-4/5"
 							/>
 						</div>
 					</div>
@@ -269,7 +317,7 @@ export default function Page() {
 					{data.Heading4}
 				</h2>
 
-				<div className="flex gap-8">
+				{/* <div className="flex gap-8">
 					<Button
 						rounded
 						twStyles="!bg-white/25 uppercase text-white tracking-widest text-sm"
@@ -297,7 +345,7 @@ export default function Page() {
 					>
 						Application
 					</Button>
-				</div>
+				</div> */}
 
 				<div className="grid grid-cols-3 gap-8">
 					{data.memebers.map((member) => (
