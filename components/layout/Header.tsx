@@ -8,7 +8,7 @@ import { ArrowRight } from '@phosphor-icons/react/dist/ssr';
 const Header = () => {
 	return (
 		<>
-			<div className="container flex h-16 w-screen items-center justify-center overflow-x-hidden">
+			<div className="container flex h-16 w-screen items-center justify-between overflow-x-hidden">
 				<Image
 					src="/logo.png"
 					alt="Shodh.AI Logo"
@@ -17,13 +17,13 @@ const Header = () => {
 					className="mx-2"
 				/>
 
-				<nav className="mx-auto flex gap-6 md:gap-12">
+				{/* <nav className="mx-auto flex gap-6 md:gap-12">
 					{data.navItems.map((item) => (
 						<Link href={item.path} key={item.name}>
 							{item.name}
 						</Link>
 					))}
-				</nav>
+				</nav> */}
 
 				{data.button ? (
 					<Link href={data.button.path} className="scale-90">
