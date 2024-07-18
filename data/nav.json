@@ -1,19 +1,6 @@
 {
   "imagePath": "#",
-  "navItems": [
-    {
-      "name": "Home",
-      "path": "/"
-    },
-    {
-      "name": "About",
-      "path": "/about"
-    },
-    {
-      "name": "Packages",
-      "path": "/packages"
-    }
-    
+  "navItems": [  
   ],
   "button": {
     "name": "Discord",
