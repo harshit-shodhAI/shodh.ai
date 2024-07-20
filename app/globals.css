@@ -76,6 +76,10 @@
   color: rgb(3, 96, 231);
 }
 
+.twitter-embed{
+  max-width:550px;
+}
+
 /* .card-back{
   background: linear-gradient(#131326, #30354d);
   height: 51%;

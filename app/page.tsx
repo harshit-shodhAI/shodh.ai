@@ -1,6 +1,7 @@
 "use client";
 import data from "@/data/home";
-import TwitterTimeline from "@/app/twitter";
+// import TwitterTimeline from "@/app/twitter";
+import TweetEmbed from 'react-tweet-embed'
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
           </div>{" "}
           <div className="text-3xl lg:text-6xl">{data.mainHeading[1]}</div>
           <div className="m-4 lg:text-xl lg:w-1/2">{data.mainSubtext}</div>
-          <TwitterTimeline />
+          <TweetEmbed tweetId="1811448269140017540" options={{theme: 'dark' }} className="w-4/5 lg:w-1/2 twitter-embed"/>
         </div>
       </div>
     </>

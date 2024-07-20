@@ -13,7 +13,7 @@ const TwitterTimeline = () => {
     <div className="h-1/3 w-4/5">
       <Link
         className="twitter-timeline"
-        href="https://twitter.com/shodh_ai"
+        href="https://twitter.com/shodh_ai?ref_src=twsrc%5Etfw"
         data-theme="dark"
       ></Link>
     </div>
