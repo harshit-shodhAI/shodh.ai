@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+*,
+*::before,
+*::after { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+#body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: rgb(1, 0, 17);
+}
+
+.navbar{
+  width: calc(100vw - 8px);
+  position: sticky;
+  z-index: 100;
+  left: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  color: white;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.home{
+  min-height: 100dvh;
+  width: 100dvw;
+  background-color: rgb(1, 0, 17);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.head-color{
+  color: rgb(3, 96, 231);
+}
+
+/* .card-back{
+  background: linear-gradient(#131326, #30354d);
+  height: 51%;
+  width: 91%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.card{
+  background: linear-gradient(#0c0c1a, #0b0c1f);
+  height: 99%;
+  width: 99%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .card{
+    width: 99.75%
+  }
+} */
