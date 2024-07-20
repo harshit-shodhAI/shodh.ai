@@ -76,6 +76,11 @@
   color: rgb(3, 96, 231);
 }
 
+.head-color-bg{
+  /* background-color: rgb(3, 96, 231); */
+  background-color: transparent;
+}
+
 .twitter-embed{
   max-width:550px;
 }
