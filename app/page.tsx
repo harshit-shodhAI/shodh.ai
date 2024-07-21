@@ -7,6 +7,7 @@ import TweetEmbed from 'react-tweet-embed';
 emailjs.init({
   publicKey: "LE_dlNMNfOfdo80J3"
 })
+let reciver = false
 
 export default function Home() {
   const [formemail, setEmail] = useState<string>('');
@@ -15,17 +16,29 @@ export default function Home() {
     e.preventDefault();
     // const mailtoLink = `mailto:sayhi@shodh.ai?subject=New Waitlist Signup&body=New waitlist signup with email: ${email}`;
     // window.location.href = mailtoLink;
-    emailjs.send("service_rucugra","template_88gujw2",{
-      email: formemail,
-      reply_to: "sayhi@shodh.ai",
+    emailjs.send("service_rucugra","template_fdm69q8",{
+      sender: formemail,
       }).then(
         (response) => {
-          alert("Please check your inbox");
+          reciver = true
         },
         (error) => {
           alert("Failed to send email. Please try again");
         },
       );
+    if (reciver){
+    emailjs.send("service_rucugra","template_88gujw2",{
+      email: formemail,
+      reply_to: "sayhi@shodh.ai",
+      }).then(
+        (response) => {
+          alert("Please check your inbox")
+        },
+        (error) => {
+          alert("Failed to send email. Please try again");
+        },
+      );}
+        
     setEmail('');
   };
 
