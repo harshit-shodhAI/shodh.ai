@@ -26,7 +26,8 @@ export default function Home() {
             reply_to: "sayhi@shodh.ai",
             }).then(
               (response) => {
-                alert("Please check your inbox")
+                alert("Please check your inbox");
+                setEmail('');
               },
               (error) => {
                 alert("Failed to send email. Please try again");
@@ -37,8 +38,6 @@ export default function Home() {
           alert("Failed to send email. Please try again");
         },
       );
-        
-    setEmail('');
   };
 
   return (
