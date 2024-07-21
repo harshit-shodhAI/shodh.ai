@@ -1,15 +1,31 @@
 "use client";
 import { useState, FormEvent } from 'react';
 import data from "@/data/home";
+import emailjs from "@emailjs/browser";
 import TweetEmbed from 'react-tweet-embed';
 
+emailjs.init({
+  publicKey: "LE_dlNMNfOfdo80J3"
+})
+
 export default function Home() {
-  const [email, setEmail] = useState<string>('');
+  const [formemail, setEmail] = useState<string>('');
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const mailtoLink = `mailto:sayhi@shodh.ai?subject=New Waitlist Signup&body=New waitlist signup with email: ${email}`;
-    window.location.href = mailtoLink;
+    // const mailtoLink = `mailto:sayhi@shodh.ai?subject=New Waitlist Signup&body=New waitlist signup with email: ${email}`;
+    // window.location.href = mailtoLink;
+    emailjs.send("service_rucugra","template_88gujw2",{
+      email: formemail,
+      reply_to: "sayhi@shodh.ai",
+      }).then(
+        (response) => {
+          alert("Please check your inbox");
+        },
+        (error) => {
+          alert("Failed to send email. Please try again");
+        },
+      );
     setEmail('');
   };
 
@@ -33,8 +49,8 @@ export default function Home() {
             <div className="flex items-center w-3/5 lg:w-auto">
               <input
                 type="email" 
-                placeholder="Enter your email address" 
-                value={email}
+                placeholder="Enter your email" 
+                value={formemail}
                 onChange={(e) => setEmail(e.target.value)}
                 className="rounded w-full text-black py-1 px-3 text-center text-field border border-white focus:outline-none focus:border-blue-500"
                 required
