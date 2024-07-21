@@ -7,7 +7,8 @@ import TweetEmbed from 'react-tweet-embed';
 emailjs.init({
   publicKey: "LE_dlNMNfOfdo80J3"
 })
-let reciver = false
+let reciver = false;
+let sender = false;
 
 export default function Home() {
   const [formemail, setEmail] = useState<string>('');
@@ -20,24 +21,22 @@ export default function Home() {
       sender: formemail,
       }).then(
         (response) => {
-          reciver = true
+          emailjs.send("service_rucugra","template_88gujw2",{
+            email: formemail,
+            reply_to: "sayhi@shodh.ai",
+            }).then(
+              (response) => {
+                alert("Please check your inbox")
+              },
+              (error) => {
+                alert("Failed to send email. Please try again");
+              },
+            );
         },
         (error) => {
           alert("Failed to send email. Please try again");
         },
       );
-    if (reciver){
-    emailjs.send("service_rucugra","template_88gujw2",{
-      email: formemail,
-      reply_to: "sayhi@shodh.ai",
-      }).then(
-        (response) => {
-          alert("Please check your inbox")
-        },
-        (error) => {
-          alert("Failed to send email. Please try again");
-        },
-      );}
         
     setEmail('');
   };
