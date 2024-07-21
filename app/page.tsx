@@ -27,13 +27,13 @@ export default function Home() {
             className="flex flex-col lg:flex-row gap-4 lg:gap-8 justify-center items-center"
           >
             <div className='flex flex-col justify-start items-center lg:w-4/6 text-gray-200'>
-              <div>Shodh.ai is by invitation only</div>
-              <div>Enter your email for early access</div>
+              <div>Shodh AI is by invitation only</div>
+              <div>Enter your email address for early access</div>
             </div>
             <div className="flex items-center w-3/5 lg:w-auto">
               <input
                 type="email" 
-                placeholder="Enter your email" 
+                placeholder="Enter your email address" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="rounded w-full text-black py-1 px-3 text-center text-field border border-white focus:outline-none focus:border-blue-500"
@@ -47,7 +47,7 @@ export default function Home() {
               </button>
             </div>
           </form>
-          <TweetEmbed tweetId="1811448269140017540" options={{ theme: 'dark' }} className="w-4/5 lg:w-1/2 twitter-embed" />
+          <TweetEmbed tweetId="1814971983307690127" options={{ theme: 'dark' }} className="w-4/5 lg:w-1/2 twitter-embed" />
         </div>
       </div>
     </>
