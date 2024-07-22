@@ -6,38 +6,40 @@ import TweetEmbed from 'react-tweet-embed';
 
 emailjs.init({
   publicKey: "LE_dlNMNfOfdo80J3"
-})
-let reciver = false;
-let sender = false;
+});
 
 export default function Home() {
   const [formemail, setEmail] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // const mailtoLink = `mailto:sayhi@shodh.ai?subject=New Waitlist Signup&body=New waitlist signup with email: ${email}`;
-    // window.location.href = mailtoLink;
-    emailjs.send("service_rucugra","template_fdm69q8",{
+    setLoading(true);
+
+    emailjs.send("service_rucugra", "template_fdm69q8", {
       sender: formemail,
-      }).then(
-        (response) => {
-          emailjs.send("service_rucugra","template_88gujw2",{
-            email: formemail,
-            reply_to: "sayhi@shodh.ai",
-            }).then(
-              (response) => {
-                alert("Please check your inbox");
-                setEmail('');
-              },
-              (error) => {
-                alert("Failed to send email. Please try again");
-              },
-            );
-        },
-        (error) => {
-          alert("Failed to send email. Please try again");
-        },
-      );
+    }).then(
+      (response) => {
+        emailjs.send("service_rucugra", "template_88gujw2", {
+          email: formemail,
+          reply_to: "sayhi@shodh.ai",
+        }).then(
+          (response) => {
+            setEmail('');
+            setLoading(false);
+            alert("Please check your inbox");
+          },
+          (error) => {
+            setLoading(false);
+            alert("Failed to send email. Please try again");
+          }
+        );
+      },
+      (error) => {
+        setLoading(false);
+        alert("Failed to send email. Please try again");
+      }
+    );
   };
 
   return (
@@ -66,14 +68,17 @@ export default function Home() {
                 className="rounded w-full text-black py-1 px-3 text-center text-field border border-white focus:outline-none focus:border-blue-500"
                 required
               />
-              <button 
-                type="submit" 
-                className="ml-2 px-2 head-color-bg text-white rounded focus:outline-none"
-              >
-                ➔
-              </button>
+              {!loading && (
+                <button 
+                  type="submit" 
+                  className="ml-2 px-2 head-color-bg text-white rounded focus:outline-none"
+                >
+                  ➔
+                </button>
+              )}
             </div>
           </form>
+          {loading && <div className="mt-4 text-white">Loading...</div>}
           <TweetEmbed tweetId="1814971983307690127" options={{ theme: 'dark' }} className="w-4/5 lg:w-1/2 twitter-embed" />
         </div>
       </div>
