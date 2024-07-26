@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 import TweetEmbed from "react-tweet-embed";
 
 emailjs.init({
-  publicKey: "LE_dlNMNfOfdo80J3",
+  publicKey: "WFwRBg8F8GL0TlgBI",
 });
 
 export default function Home() {
